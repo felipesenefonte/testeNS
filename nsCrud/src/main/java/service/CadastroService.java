@@ -1,6 +1,6 @@
 package service;
 
-import controller.JsonJTableList;
+import model.JsonJTableList;
 import model.Endereco;
 import model.dao.CadastroDAO;
 import org.springframework.beans.factory.annotation.Autowired;

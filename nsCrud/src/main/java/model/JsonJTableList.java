@@ -1,6 +1,4 @@
-package controller;
-
-import model.Endereco;
+package model;
 
 import java.util.List;
 

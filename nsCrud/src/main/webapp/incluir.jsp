@@ -47,13 +47,14 @@
 
                 //Url do servico
                 //var url = "http://54.207.15.43:8080/nsRest/rest/servicoCEP/consultar/" + $('#cep').val(); //Amazon
-                var url = "http://localhost:9999/rest/servicoCEP/consultar/" + $('#cep').val(); //Teste Local
+                //var url = "http://localhost:9999/rest/servicoCEP/consultar/" + $('#cep').val(); //Teste Local
 
 
                 //consulta cep
                 $.ajax({
-                    url : url,
+                    url : 'consultarCEP',
                     type : 'GET',
+                    data : 'cep=' + $('#cep').val(),
                     dataType: 'json',
                     success: function(data){
                         if(data.status == "OK"){
